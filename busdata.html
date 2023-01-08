@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Information</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="https://kit.fontawesome.com/1569012dbb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <div class="icon"><i class="fa fa-info" aria-hidden="true">
+        </i></div>
+        <div class="content">
+            <h3>Bus Name</h3>
+            <p>The bus name is {{posts.jaja}}</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="icon"><i class="fa fa-info" aria-hidden="true">
+        </i></div>
+        <div class="content">
+            <h3>Number of passengers</h3>
+            <p>The number of passengers on the bus right now is {{posts.numPass}}</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="icon"><i class="fa fa-info" aria-hidden="true">
+        </i></div>
+        <div class="content">
+            <h3>ETA</h3>
+            <p>The estimated time of arrival of the bus is {{posts.eta}} min/s.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
