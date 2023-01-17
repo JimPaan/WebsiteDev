@@ -34,6 +34,7 @@ class Display(QMainWindow):
         mainwindow = MyGui()
         widget.addWidget(mainwindow)
         widget.setCurrentIndex(widget.currentIndex()+1)
+        #kokokokoko
 
 
 
