@@ -1,0 +1,14 @@
+.background
+{
+    background-image: url('rapid-kl-bus.jpg');
+    opacity: 0.7;
+}
+.box
+{
+    position: relative;
+    width: 200px;
+    bottom: 5px;
+    left: 535px;
+    height: 100px;
+    border: 3px solid #ADD8E6;
+}
