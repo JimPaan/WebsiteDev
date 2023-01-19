@@ -14,8 +14,8 @@ class MyGui(QMainWindow):
         self.pushButton = None
         uic.loadUi("first.ui", self)
         self.pushButton.clicked.connect(self.gotoscreen2)   #fuction for clicked button (and kena tambah lagi untuk bas lain)
-    #    self.pushButton_2.clicked.connect(self.gotoscreen2) #kena ejas dekat 1. gotoscreen2 or 2. class Display
-    #    self.pushButton_3.clicked.connect(self.gotoscreen2)
+        self.pushButton_2.clicked.connect(self.gotoscreen2) #kena ejas dekat 1. gotoscreen2 or 2. class Display
+        self.pushButton_3.clicked.connect(self.gotoscreen2)
 
     @staticmethod
     def gotoscreen2():

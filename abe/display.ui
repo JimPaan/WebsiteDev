@@ -162,7 +162,7 @@ background-color: rgb(170, 170, 170);
 </string>
     </property>
     <property name="text">
-     <string>hai</string>
+     <string>Back</string>
     </property>
    </widget>
   </widget>
