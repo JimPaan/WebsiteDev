@@ -151,6 +151,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "T789"))
         self.pushButton_3.setText(_translate("MainWindow", "T870"))
         self.label_4.setText(_translate("MainWindow", "Please Choose Your Bus"))
+
 import logo_rc
 
 

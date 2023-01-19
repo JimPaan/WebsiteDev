@@ -4,18 +4,23 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication
-import first
+from first import Ui_MainWindow
+from display import Ui_display
 
 
-class MyGui(QMainWindow):
+class MyGui(QMainWindow,Ui_MainWindow):
 
     def __init__(self):
         super(MyGui, self).__init__()
         self.pushButton = None
         uic.loadUi("first.ui", self)
-        self.pushButton.clicked.connect(self.gotoscreen2)   #fuction for clicked button (and kena tambah lagi untuk bas lain)
-        self.pushButton_2.clicked.connect(self.gotoscreen2) #kena ejas dekat 1. gotoscreen2 or 2. class Display
+        self.second_window = Display()
+        self.pushButton.clicked.connect(self.gotoscreen2)
+        self.pushButton_2.clicked.connect(self.gotoscreen2)
         self.pushButton_3.clicked.connect(self.gotoscreen2)
+
+        if self.pushButton_2.clicked is True:
+            self.bus_name = 'T789'
 
     @staticmethod
     def gotoscreen2():
@@ -23,12 +28,17 @@ class MyGui(QMainWindow):
         widget.addWidget(display)
         widget.setCurrentIndex(widget.currentIndex()+1)
 
+    def passinginfos(self):
+        self.second_window.textBrowser.setText(self.bus_name)
+        self.second_window.textBrowser_2.setText()
 
-class Display(QMainWindow):
+
+class Display(QMainWindow, Ui_display):
     def __init__(self):
         super(Display,self).__init__()
         uic.loadUi("display.ui",self)
         self.pushButton_4.clicked.connect(self.gotofirst)
+        self.bus_name =
 
     def gotofirst(self):
         mainwindow = MyGui()
