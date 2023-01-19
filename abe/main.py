@@ -28,6 +28,7 @@ class MyGui(QMainWindow,Ui_MainWindow):
         widget.addWidget(display)
         widget.setCurrentIndex(widget.currentIndex()+1)
 
+#https://www.youtube.com/watch?v=NrijKenny3Y
     def passinginfos(self):
         self.second_window.textBrowser.setText(self.bus_name)
         self.second_window.textBrowser_2.setText()
