@@ -18,34 +18,20 @@ class Ui_display(object):
         display.setStyleSheet("background-color: rgb(255, 170, 0);")
         self.centralwidget = QtWidgets.QWidget(display)
         self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(30, 40, 291, 141))
-        self.label.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(30, 240, 131, 16))
         self.label_2.setStyleSheet("font: 87 8pt \"Arial Black\";\n"
 "color: rgb(0, 0, 127);\n"
 "")
         self.label_2.setObjectName("label_2")
-        self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit.setGeometry(QtCore.QRect(60, 270, 231, 81))
-        self.textEdit.setStyleSheet("border-radius : 25px;\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0.761194 rgba(255, 192, 26, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.textEdit.setObjectName("textEdit")
-        self.textEdit_2 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit_2.setGeometry(QtCore.QRect(60, 390, 231, 51))
-        self.textEdit_2.setStyleSheet("border-radius : 25px;\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0.761194 rgba(255, 192, 26, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.textEdit_2.setObjectName("textEdit_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(30, 370, 131, 16))
         self.label_3.setStyleSheet("font: 87 8pt \"Arial Black\";\n"
 "color: rgb(0, 0, 127);\n"
 "")
         self.label_3.setObjectName("label_3")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(10, 10, 41, 20))
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(10, 10, 41, 20))
         font = QtGui.QFont()
         font.setPointSize(8)
         font.setBold(True)
@@ -55,9 +41,9 @@ class Ui_display(object):
         font.setStrikeOut(False)
         font.setKerning(True)
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
-        self.pushButton.setFont(font)
-        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
-        self.pushButton.setStyleSheet("QPushButton{\n"
+        self.pushButton_4.setFont(font)
+        self.pushButton_4.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.pushButton_4.setStyleSheet("QPushButton{\n"
 "background-color: rgb(67, 66, 66);\n"
 "    color: rgb(255, 255, 255);\n"
 "    \n"
@@ -79,10 +65,26 @@ class Ui_display(object):
 "    color: rgb(255, 255, 255);\n"
 "}\n"
 "")
-        self.pushButton.setObjectName("pushButton")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser.setGeometry(QtCore.QRect(60, 260, 211, 81))
+        self.textBrowser.setStyleSheet("border-radius : 25px;\n"
+"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0.761194 rgba(255, 192, 26, 255), stop:1 rgba(255, 255, 255, 255));")
+        self.textBrowser.setObjectName("textBrowser")
+        self.textBrowser_2 = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser_2.setGeometry(QtCore.QRect(60, 400, 211, 81))
+        self.textBrowser_2.setStyleSheet("border-radius : 25px;\n"
+"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0.761194 rgba(255, 192, 26, 255), stop:1 rgba(255, 255, 255, 255));")
+        self.textBrowser_2.setObjectName("textBrowser_2")
+        self.textBrowser_3 = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser_3.setGeometry(QtCore.QRect(15, 90, 321, 91))
+        self.textBrowser_3.setStyleSheet("border-radius : 25px;\n"
+"font: 22pt \"MS Shell Dlg 2\";\n"
+"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0.761194 rgba(255, 192, 26, 255), stop:1 rgba(255, 255, 255, 255));")
+        self.textBrowser_3.setObjectName("textBrowser_3")
         display.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(display)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 360, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 360, 18))
         self.menubar.setObjectName("menubar")
         display.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(display)
@@ -95,22 +97,9 @@ class Ui_display(object):
     def retranslateUi(self, display):
         _translate = QtCore.QCoreApplication.translate
         display.setWindowTitle(_translate("display", "MainWindow"))
-        self.label.setText(_translate("display", "<html><head/><body><p align=\"center\">Gambar bas</p><p align=\"center\">contoh</p></body></html>"))
         self.label_2.setText(_translate("display", "Estimated Arrival"))
-        self.textEdit.setHtml(_translate("display", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Estimate time</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.textEdit_2.setHtml(_translate("display", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">passenger</p></body></html>"))
         self.label_3.setText(_translate("display", "No. Passenger"))
-        self.pushButton.setText(_translate("display", "back"))
+        self.pushButton_4.setText(_translate("display", "Back"))
 
 
 if __name__ == "__main__":
